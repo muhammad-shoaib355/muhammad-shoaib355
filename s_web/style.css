@@ -1,0 +1,160 @@
+/* Dark Blue Beautiful Animated Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at 20% 20%, #0a1a3f, #000814, #001f3f);
+    background-size: 200% 200%;
+    animation: glowMove 12s ease-in-out infinite;
+    color: white;
+}
+
+/* Soft Glow Animation */
+@keyframes glowMove {
+    0% {
+        background-position: 20% 20%;
+    }
+    25% {
+        background-position: 80% 30%;
+    }
+    50% {
+        background-position: 50% 80%;
+    }
+    75% {
+        background-position: 30% 60%;
+    }
+    100% {
+        background-position: 20% 20%;
+    }
+}
+
+/* Make all text white */
+p, h1, h2, h3, h4, h5, h6, a {
+    color: white;
+}
+
+
+
+/* Keep other styling */
+header {
+    background: rgba(0,0,0,0.7); /* slightly transparent header */
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    color: #00b3ff;
+}
+
+section {
+    padding: 40px;
+}
+
+/* Other styles (profile picture, back button, icons, etc.) remain the same */
+
+
+.profile-pic {
+    width: 320px;        /* Bigger size */
+    height: 320px;       /* Keep it square */
+    object-fit: cover;   /* Keeps image perfect inside circle */
+    border-radius: 50%;  /* Makes it a perfect circle */
+    display: block;
+    margin: 30px auto;   /* Centers the image */
+    border: 5px solid #00b3ff; /* Optional beautiful border */
+}
+
+
+.certificate-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* center images */
+}
+
+.certificate-gallery a img {
+    width: 300px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.certificate-gallery a img:hover {
+    transform: scale(1.05); /* small zoom on hover */
+}
+
+
+.social-icons a {
+    font-size: 35px;
+    margin-right: 20px;
+    color: #222;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centers icons horizontally */
+    gap: 20px;               /* Space between icons */
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 35px;
+    color: #222;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #00b3ff;
+}
+
+
+.back-btn {
+    margin: 20px;
+}
+
+.back-btn button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* Hover Zoom effect */
+.back-btn button:hover {
+    transform: scale(1.1);
+    background: #00b3ff;
+}
+/* Center all normal text except headings */
+p {
+    text-align: center;
+    font-size: 18px;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth animation */
+}
+
+nav a:hover {
+    transform: scale(1.2); /* Zoom effect */
+    color: #00b3ff;
+}
